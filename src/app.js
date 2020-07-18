@@ -2,7 +2,7 @@ const express=require('express')
 const path=require('path')
 const mongoose=require('mongoose')
 const multer=require('multer')
-mongoose.connect('mongodb://127.0.0.1:27017/students',{
+mongoose.connect('mongodb+srv://Kherkata:Kherkata@123@cluster0.hdzhs.mongodb.net/test?retryWrites=true&w=majority',{
     useNewUrlParser:true,
     useCreateIndex:true,
     useUnifiedTopology: true
