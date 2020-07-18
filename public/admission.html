@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+              <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">Collage</label>
+            <ul class="menu">
+              <li class="logo_li"><a href="index.html"><i class="fas fa-home"></i></a></li>
+              <li><a href="people.html">People</a></li>
+              <li><a href="aboutUs.html">About Us</a></li>
+              <li><a href="contactUs.html">Contact Us</a></li>
+      </ul>
+      </nav>
+        <br>
+        <br>
+        <p id="instruction">Enter your marks in the respective columns and upload your marksheet of type jpg and size less than 300 kb 
+          <br> Tip: Image size reduces after sending through whatsapp.
+        </p>
+        <br>
+        <br>
+        <form id="form">
+          
+            <div class="marks">
+                <label class="labelSafe">Name </label>    
+                <input id="name" required> 
+             </div>   
+             <div class="marks">
+                <label class="labelSafe">roll </label>    
+                <input id="roll" required> 
+             </div>   
+             <div class="marks">
+                <label class="labelSafe">number </label>    
+                <input id="no" required> 
+             </div>   
+             <div class="marks">
+                <label class="labelSafe">english </label>    
+                <input id="eng" required type="number"> 
+             </div>   
+             <div class="marks">
+                <label class="labelSafe">maths  </label>
+                <input id="math" required type="number">
+            </div>      
+            <div class="marks">
+                <label class="labelSafe">social science </label>
+                <input id="sst" required type="number"> 
+            </div>
+            <div class="marks">
+                <label class="labelSafe"> science</label>  
+                <input id="sci" required type="number"> 
+            </div>
+            <div class="marks">
+                <label class="labelSafe">elective  </label>   
+                <input id="elective" required type="number">
+            </div>
+            <div class="marks">
+                <label class="labelSafe">mil</label>  
+                <input id="mil" required type="number">
+            </div>
+            <div class="marks">
+                <label class="labelSafe">Mark sheet</label>  
+                <input id="sheet" type="file" >
+            </div>
+            <div class="marks">
+                <button id="submit-button">Submit</button>
+            </div>
+            <br>
+            <p id="admission-confermation"></p>
+        </form>
+       
+     
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="js/admission.js"></script>
+        <div class="footer">
+            <table style="width:100%">
+              <tr>
+                <td><h3>About Us</h3></td>
+                <td><h3>Address</h3></td>
+                <td><h3>Contact detais</h3></td>
+              </tr>
+              <tr>
+                <td>
+                  <p>--about  us in brief---</p></td>
+                <td>
+                  <p>address</p></td>
+                <td>
+                  <p>
+                      <i class="fas fa-envelope-square"></i> email id
+                      <br>
+                      <i class="fab fa-facebook"></i> facebook id
+                      <br>
+                      <i class="fas fa-phone"></i> Phone number
+                      
+                  </p></td>
+              </tr>
+            </table>
+            <div class="footer-bottom">
+              <br><br>
+              &copy; Created by Wajahat Yusuf
+            </div>
+          </div>
+    </body>
+</html>

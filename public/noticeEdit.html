@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {text-align: center;}
+            label { display:block;
+  width:100%;
+  padding:10px 0;
+  text-transform: uppercase;}
+    
+            </style>
+    </head>
+    <body >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <p id="result"></p>
+        <form id="form2">
+            <div class="insert">
+                <label>enter the text to display </label>    
+                <input id="front" required> 
+             </div>  
+            <div class="insert">
+               <label>Enter the file to upload </label>    
+               <input id="back" required type="file"> 
+            </div>   
+         
+            <div class="insert">
+                <button id="insert-button">INSERT</button>
+            </div>
+            <br><br><br><br>
+        </form>
+        <form id="form3">
+            <div class="remove">
+                <label>enter the id of the notice to delete </label>    
+                <input id="idNotice" required> 
+             </div>  
+         
+            <div class="remove">
+                <button id="remove-button">remove</button>
+            </div>
+            
+        </form>
+        <h3>Notices</h3>
+        <p id="all-notice"></p>
+        
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="js/noticeEdit.js"></script>
+    </body>
+</html>

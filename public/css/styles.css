@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+nav{
+  background: #174956;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: #f2f2f2;
+  font-size: 33px;
+  line-height: 80px;
+  padding: 0 140px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+nav ul{
+  float: right;
+  margin-right: 60px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 2px;
+}
+
+nav ul li a{
+  color: #f2f2f2;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  /* text-transform: uppercase; */
+  font-family: 'Poppins', sans-serif;
+}
+.logo_li a{
+  font-size:30px;
+  background-color:black;
+}
+.logo_li a:hover{
+  background-color:white !important;
+color:black !important;
+font-size: 35px !important;
+}
+nav ul li a.active,a:hover{
+  background:black;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 27px;
+    padding-left: 25px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+    margin-right: 40px;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #174956;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+#banner{
+  width: 100%;
+ 
+}
+#banner img{
+  width: 100%;
+  height:400px;
+  margin-top: 0px;
+}
+#admission{
+  text-align: center;
+  position: relative;
+  text-decoration: none !important;
+font-family: Impact, sans-serif;
+font-size: 25px;
+letter-spacing: 2px;
+background: linear-gradient(90deg,darkred,red, rgb(79, 2, 82));
+background-repeat: no-repeat;
+background-size: 80%;
+animation: animate 5s infinite;
+-webkit-background-clip: text;
+-webkit-text-fill-color: rgba(168, 3, 99, 0);
+text-decoration: none !important;
+}
+@keyframes animate {
+  0% {
+    background-position: -180%;
+  }
+  100% {
+    background-position: 180%;
+  }
+}
+#form{
+   max-width: 500px;
+   margin:2rem auto;
+   border:2px solid #E74C3C;
+   padding:2rem;
+  
+
+}
+#notice-home{
+  list-style-type: circle;
+  list-style-position: outside;
+  padding: 20px;
+  list-style-type: none;
+  margin-bottom: 0px;
+}
+
+#notice-home li{
+  background: #cce5ff;
+  margin: 5px;
+  width:60%;
+
+}
+#why_choose{
+  width:100%;
+  text-align:center;
+}
+#why_choose h1{
+  text-align:center;
+  font-size: 30px;
+  color:rgb(195, 0, 255);
+  text-decoration: underline;
+}
+.div_section1{
+  width:15%;
+  height:300px;
+  margin:80px;
+  float: left;
+}
+.icon{
+  width:80px;
+  height:80px;
+  border:1px solid rgb(30, 4, 37);
+  margin: 10px auto;
+  line-height: 80px;
+  font-size:50px;
+  border-radius: 50px;
+  background-color: rgb(2, 8, 36);
+  color:white; 
+  transition-duration: .7s;
+}
+.icon.active,.icon:hover{
+  font-size: 40px;
+}
+.footer{
+  background: #303036;
+  color: #d3d3d3;
+  height:150px;
+}
+.footer-bottom{
+  color: white;
+  text-align:center;
+}
+h1{
+  text-align:center;
+}
+#form{
+  max-width: 500px;
+  margin:2rem auto;
+  border:2px solid #E74C3C;
+  padding:2rem;
+ 
+
+}
+#notice-home{
+  list-style-position: outside;
+  padding: 20px;
+  list-style-type: none;
+  margin-bottom: 0px;
+}
+#notice-home li{
+  background: #cce5ff;
+  margin: 5px;
+  width:60%;
+
+}
+#submit-button{
+  border:0;
+  background: blueviolet;
+  width:100%;
+  color:white;
+ text-transform: uppercase;
+ padding:10px 0;
+ margin-top: 15px;
+ font-size: 15px;
+}
+input{
+  padding: 5px 0;
+}
+#submit-button:hover{
+
+ background: black;
+}
+.labelSafe{
+  display:block;
+  width:100%;
+  padding:10px 0;
+  text-transform: uppercase;
+}
+.marks{
+  text-align:center;
+}
+#peoples{
+  margin-left: 10px;
+}
+#peoples li {
+  background: #e1feff;
+  padding: 5px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+#peoples h3{
+  margin-top: 15px;
+  color:#03002c;
+}
+#peoples h2{
+  text-decoration: underline;
+}
+#admission-confermation{
+  text-align: center;
+  border: 2px solid black;
+ 
+}
+#instruction{
+  text-align: center;
+  margin-right: 20px;
+  background-color: rgb(208, 236, 236);
+}
