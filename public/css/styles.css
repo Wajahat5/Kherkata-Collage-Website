@@ -115,7 +115,7 @@ nav ul li a.active,a:hover{
 }
 #banner img{
   width: 100%;
-  height:450px;
+  height:400px;
   margin-top: 0px;
 }
 #admission{
@@ -265,6 +265,12 @@ input{
 #peoples h3{
   margin-top: 15px;
   color:#03002c;
+}
+#aboutCollege{
+  background: #e1feff;
+  padding: 5px;
+  margin-left: 35px;
+  margin-right: 35px;
 }
 #peoples h2{
   text-decoration: underline;
