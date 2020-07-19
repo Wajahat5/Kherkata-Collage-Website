@@ -2,7 +2,7 @@ const express=require('express')
 const path=require('path')
 const mongoose=require('mongoose')
 const multer=require('multer')
-mongoose.connect('mongodb+srv://Kherkata:Kherkata@123@cluster0.hdzhs.mongodb.net/test?retryWrites=true&w=majority',{
+mongoose.connect('mongodb+srv://Kherkata:Kherkata@123@cluster0.hdzhs.mongodb.net/test?retryWrites=true',{
     useNewUrlParser:true,
     useCreateIndex:true,
     useUnifiedTopology: true
@@ -35,11 +35,7 @@ app.get('',(req,res)=>{
 app.get('/notice',(req,res)=>{
     res.render('notice',{})
 })
-const upload=multer({
-    limits:{
-        fileSize:2000
-    }
-})
+const upload=multer()
 
 app.post('/candidate',(req,res)=>{
     const stu=new candidate(req.body)

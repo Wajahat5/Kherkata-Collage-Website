@@ -20,7 +20,7 @@ axios.get('/noticedata')
     console.log(e)
 })
 inputForm.addEventListener('submit',(e)=>{
-    
+    e.preventDefault()
     upld.append('back',back.files[0])
 
     axios.post('/notice',{front: front.value})
